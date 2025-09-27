@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV Writing — Samudhra Bookshop</title>
+  <meta name="description" content="Short, clear paragraphs about CV writing for the Samudhra Bookshop website." />
+  <style>
+    :root{
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --muted: #55606a;
+      --accent: #0b64c9;
+      --radius: 12px;
+      --maxw: 900px;
+      --pad: 20px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:#17202a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      font-size:16px;
+      line-height:1.6;
+    }
+
+    /* Navbar */
+    header{
+      background:#333;
+      color:#fff;
+      padding:15px 20px;
+    }
+
+    header nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header nav a{
+      color:#fff;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+      transition:color 0.2s;
+    }
+
+    header nav a:hover{color:rgb(216,240,81);}
+
+    header .logo img{height:90px;width:auto;}
+
+    .container{
+      width:100%;
+      max-width:var(--maxw);
+      
+      padding:calc(var(--pad) * 1.2);
+      box-sizing:border-box;
+      margin:40px auto;
+    }
+    .container h1{
+      font-size: 40px;
+    }
+
+    .cards {
+  display: block;     /* remove grid layout */
+  gap: 0;             /* no spacing needed */
+}
+
+.card, .card1 {
+  background: none;   /* remove background box */
+  border: none;       /* remove border radius */
+  box-shadow: none;   /* remove shadow */
+  padding: 0;         /* remove padding */
+  margin: 50px 0;     /* just add simple spacing */
+  width: 100%;    /* take full width */
+}
+
+.card h2, .card1 h2 {
+  margin: 20px 0 10px 0;
+  font-size: 30px;
+  color: rgb(139, 154, 50);   /* optional: keep a nice highlight */
+}
+
+.card p, .card1 p {
+  margin: 0 0 15px 0;
+  color: #333;      /* normal text color */
+  font-size: 20px;
+}
+.card li {
+  margin: 0 0 15px 0;
+  color: #333;      /* normal text color */
+  font-size: 20px;
+}
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.compare-table th,
+.compare-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.compare-table th {
+  background-color: #f2f2f2;
+}
+
+.compare-table tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.compare-table tbody tr:hover {
+  background-color: #e6f7ff;
+}
+
+
+    @media (max-width:720px){
+      .cards{grid-template-columns:1fr}
+      .container{padding:16px;margin:20px auto}
+      header nav{flex-direction:column;gap:10px;padding:12px}
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a class="logo" href="index.html"><img src="2.png" alt="My website Logo"></a>
+      </div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="Lecturer.html">Lecturer</a>
+        <a href="Content.html">Our Content</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container" role="main">
+    <h1>INTERVIEW SKILLS </h1>
+
+    <section class="cards" aria-label="CV writing topics">
+
+      <article class="card">
+        
+        <p>A job interview is a professional conversation between an employer and a candidate, aimed at evaluating the candidate’s skills, experience, and overall suitability for the role. It also provides the candidate an opportunity to learn more about the organization, its culture, and expectations, making it a two-way process of assessment.</p>
+      </article>
+      <article class="card">
+        <h2>The Best Interview Strategy</h2>
+        <p>The most effective interview strategy is the one you create by reflecting on yourself.</p>
+        <li><b>What do I want the interviewer to know about me?</b></li>
+        <li><b>What weaknesses should I minimize?</b></li>
+        <li><b>What do I need to learn about the job or organization?</b></li>
+      </article>
+      <article class="card">
+        <h2>THE role of effective communication</h2>
+        <p>In an interview, the way you present yourself through your behavior and responses reflects your personality, confidence, and attitude. Creating a strong impression depends on how effectively you communicate.</p>
+        <p><b>The communication skills used at job interviews</b></p>
+        <li>Non-verbal communication</li>
+        <li>Listening</li>
+        <li>Responding</li>
+        <li>Questioning</li>
+      </article>
+      <article class="card">
+        <h2>Effective communication strategies Dduring a job interview</h2>
+        <li>Know the job/company well.</li>
+        <li>Respond to topic shift.</li>
+        <li>Use industry terms and technical jargon.</li>
+        <li>Use specifics and examples.</li>
+        <li>Ask questions where appropriate.</li>
+        <li>Speak more than interviewer.</li>
+      </article>
+      <article class="card">
+        <h2>Successful VS Unsuccesful Candidates</h2>
+        <table class="compare-table">
+  <thead>
+    <tr>
+      <th>Successful Candidates</th>
+      <th>Unsuccessful Candidates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Were specific &amp; consistent</td>
+      <td>Had vague ideas</td>
+    </tr>
+    <tr>
+      <td>Used company name</td>
+      <td>Rarely used company name</td>
+    </tr>
+    <tr>
+      <td>Showed research about company</td>
+      <td>Didn’t know about the company</td>
+    </tr>
+    <tr>
+      <td>Used technical jargon</td>
+      <td>Didn’t use jargon</td>
+    </tr>
+    <tr>
+      <td>Asked questions</td>
+      <td>Asked few questions</td>
+    </tr>
+    <tr>
+      <td>Spoke more than interviewer</td>
+      <td>Gave short answers</td>
+    </tr>
+    <tr>
+      <td>Made eye contact, smiled</td>
+      <td>Made little eye contact</td>
+    </tr>
+    <tr>
+      <td>Accepted topic shift</td>
+      <td>Resisted topic shift</td>
+    </tr>
+  </tbody>
+</table>
+      </article>
+      <article class="card">
+        <h2>Active Listening</h2>
+        <p>Being a good listener is one of the key skills you can develop.</p>
+        <li>Pay attention.</li>
+        <li>Show that you are listening.</li>
+        <li>Seek clarification if you don’t understand.</li>
+        <li>Deter judgment.</li>
+        <li>Respond appropriately.</li>
+      </article>
+      <article class="card">
+        <h2>6 C's Effective communication</h2>
+        <li>Clear</li>
+        <li>Concise</li>
+        <li>Correct</li>
+        <li>Complete</li>
+        <li>Concrete</li>
+        <li>Courteous</li>
+      </article>
+      <article class="card">
+        <h2>Language Support</h2>
+        <li>Describe your personality using adjectives.</li>
+        <li>Describing your strengths using present tense.</li>
+        <li>Describe your education and experience with past simple and present perfect tenses.</li>
+        <li>Describe your future goals.</li>
+        <li>Structure your answers.</li>
+        <li>Solve pronunciation problems.</li>
+      </article>
+      <article class="card">
+        <h2>Interview Structure</h2>
+        <li>Introduction</li>
+        <li>Evidence-speaking</li>
+        <li>Your questions</li>
+        <li>Closure</li>
+      </article>
+      <article class="card">
+        <h2>Other Interview Details</h2>
+        <li>What to wear</li>
+        <li>What to take</li>
+        <li>What to note down</li>
+        <li>How to get there</li>
+      </article>
+
+      

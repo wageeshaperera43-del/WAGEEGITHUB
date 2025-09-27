@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV Writing — Samudhra Bookshop</title>
+  <meta name="description" content="Short, clear paragraphs about CV writing for the Samudhra Bookshop website." />
+  <style>
+    :root{
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --muted: #55606a;
+      --accent: #0b64c9;
+      --radius: 12px;
+      --maxw: 900px;
+      --pad: 20px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:#17202a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      font-size:16px;
+      line-height:1.6;
+    }
+
+    /* Navbar */
+    header{
+      background:#333;
+      color:#fff;
+      padding:15px 20px;
+    }
+
+    header nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header nav a{
+      color:#fff;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+      transition:color 0.2s;
+    }
+
+    header nav a:hover{color:rgb(216,240,81);}
+
+    header .logo img{height:90px;width:auto;}
+
+    .container{
+      width:100%;
+      max-width:var(--maxw);
+      
+      padding:calc(var(--pad) * 1.2);
+      box-sizing:border-box;
+      margin:40px auto;
+    }
+    .container h1{
+      font-size: 40px;
+    }
+
+    .cards {
+  display: block;     /* remove grid layout */
+  gap: 0;             /* no spacing needed */
+}
+
+.card, .card1 {
+  background: none;   /* remove background box */
+  border: none;       /* remove border radius */
+  box-shadow: none;   /* remove shadow */
+  padding: 0;         /* remove padding */
+  margin: 50px 0;     /* just add simple spacing */
+  width: 100%;    /* take full width */
+}
+
+.card h2, .card1 h2 {
+  margin: 20px 0 10px 0;
+  font-size: 30px;
+  color: rgb(139, 154, 50);   /* optional: keep a nice highlight */
+}
+
+.card p, .card1 p {
+  margin: 0 0 15px 0;
+  color: #333;      /* normal text color */
+  font-size: 20px;
+}
+.card li {
+  margin: 0 0 15px 0;
+  color: #333;      /* normal text color */
+  font-size: 20px;
+}
+
+
+    @media (max-width:720px){
+      .cards{grid-template-columns:1fr}
+      .container{padding:16px;margin:20px auto}
+      header nav{flex-direction:column;gap:10px;padding:12px}
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a class="logo" href="index.html"><img src="2.png" alt="My website Logo"></a>
+      </div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="Lecturer.html">Lecturer</a>
+        <a href="Content.html">Our Content</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container" role="main">
+    <h1>EMAIL Writing </h1>
+
+    <section class="cards" aria-label="CV writing topics">
+
+      <article class="card">
+        <h2>Subject Line</h2>
+        <p>Email, short for electronic mail, is a way of sending digital messages through the internet. It allows people to share text, documents, images, and links, and is widely used for communication in personal, professional, and academic settings.</p>
+      </article>
+      <article class="card">
+        <h2>Greeting</h2>
+        <p>For all formal e-mail communication use: Dear + Recipient’s Title + Last name.</p>
+        <li>Dear Professor Gordon</li>
+        <li>Dear Mr. Gordon</li>
+        <li>Dear Ms. Green</li>
+      </article>
+      <article class="card">
+        <h2>Closings</h2>
+        <p>Acceptable Closings</p>
+        <li>Best</li>
+        <li>Kind regards</li>
+        <li>Regards</li>
+        <li>Sincerely</li>
+      </article>
+      <article class="card">
+        <h2>Inappropriate Closings</h2>
+        <li>Love</li>
+        <li>Yours/Yours truly</li>
+        <li>xoxo</li>
+      </article>
+      <article class="card">
+        <h2>Tone</h2>
+        <li>Polite and respectful – Use courteous language and show respect.</li>
+        <li>Professional – Avoid slang or casual language; keep it formal.</li>
+        <li>Clear and concise – Be direct but respectful, without unnecessary detail.</li>
+        <li>Non-demanding – Make requests gently, not as commands.</li>
+        <li>Grateful – Always thank the recipient for their time or help.</li>
+      </article>
+      <article class="card">
+        <h2>Before you hit 'SEND'</h2>
+        <li>Check name and greeting.</li>
+        <li>Use proper tone and language.</li>
+        <li>Review spelling and grammar.</li>
+        <li>Include a subject line and closing.</li>
+        <li>Read carefully and answer fully.</li>
+        <li>Be calm.</li>
+        <li>Reply appropriately.</li>
+      </article>
+      <article class="card">
+        <h2>After you hit 'SEND'</h2>
+        <li>Remember, emails are not for issues that are time sensitive.</li>
+        <li>If you have sent an email after 5pm or on the weekend, you shouldn’t expect a response until the recipient returns to work.</li>
+        <li>If you have asked for assistance, a follow-up email may be necessary.</li>
+        <li>Read carefully and answer fully.</li>
+        <li>Be calm.</li>
+        <li>Reply appropriately.</li>
+      </article>

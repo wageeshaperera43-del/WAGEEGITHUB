@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a class="logo" href="index.html" ><img src="2.png" height="90" width="150" alt="My website Logo"></a>
+      </div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="Lecturer.html">Lecturer</a>
+         <a href="Content.html">Our Content</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>  <style>
+    :root{
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --muted: #55606a;
+      --accent: #0b64c9;
+      --radius: 12px;
+      --maxw: 900px;
+      --pad: 20px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:#17202a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      font-size:16px;
+      line-height:1.6;
+    }
+
+    /* Navbar */
+    header{
+      background:#333;
+      color:#fff;
+      padding:15px 20px;
+    }
+
+    header nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header nav a{
+      color:#fff;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+      transition:color 0.2s;
+    }
+
+    header nav a:hover{color:rgb(216,240,81);}
+
+    header .logo img{height:90px;width:auto;}
+
+    .container{
+      width:100%;
+      max-width:var(--maxw);
+      
+      padding:calc(var(--pad) * 1.2);
+      box-sizing:border-box;
+      margin:40px auto;
+    }
+    .container h1{
+      font-size: 40px;
+    }
+
+    .cards {
+  display: block;     /* remove grid layout */
+  gap: 0;             /* no spacing needed */
+}
+
+.card, .card1 {
+  background: none;   /* remove background box */
+  border: none;       /* remove border radius */
+  box-shadow: none;   /* remove shadow */
+  padding: 0;         /* remove padding */
+  margin: 50px 0;     /* just add simple spacing */
+  width: 100%;    /* take full width */
+}
+
+.card h2, .card1 h2 {
+  margin: 20px 0 10px 0;
+  font-size: 30px;
+  color: rgb(139, 154, 50);   /* optional: keep a nice highlight */
+}
+
+.card p, .card1 p {
+  margin: 0 0 15px 0;
+  color: #333;      /* normal text color */
+  font-size: 20px;
+}
+.card li{
+  margin: 0 0 15px 0;
+  color: #333;      /* normal text color */
+  font-size: 20px;
+}
+:root{
+  --table-bg: #ffffff;
+  --muted: #55606a;
+  --accent: #0b64c9;
+  --border: #e6eefb;
+  --radius: 10px;
+  --maxw: 1100px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+}
+
+.evac-table-section{
+  max-width: var(--maxw);
+  margin: 28px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 28px rgba(17,24,39,0.05);
+}
+
+.evac-table-section h2{
+  margin: 0 0 12px;
+  font-size: 20px;
+  color: #17202a;
+}
+
+.table-wrap{
+  overflow-x: auto;
+  border-radius: 8px;
+}
+
+.evac-table{
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--table-bg);
+  min-width: 860px;
+}
+
+.evac-table thead th{
+  text-align: left;
+  padding: 14px 16px;
+  font-size: 14px;
+  background: linear-gradient(90deg, rgba(11,100,201,0.06), rgba(70,166,255,0.02));
+  color: #0b4172;
+  border-bottom: 2px solid var(--border);
+}
+
+.evac-table tbody td{
+  padding: 12px 16px;
+  vertical-align: top;
+  color: var(--muted);
+  font-size: 16px;
+  border-bottom: 1px dashed #eef6ff;
+}
+
+.evac-table tbody tr:hover td{
+  background: rgba(11,100,201,0.02);
+}
+
+.evac-table tbody tr:last-child td{
+  border-bottom: none;
+}
+
+.table-note{
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.group-photo {
+  display: block;
+  width: 1000px;
+  height: auto;
+  border-radius: 12px;   /* rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* soft shadow */
+  margin: 20px auto;     /* center with spacing */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.group-photo:hover {
+  transform: scale(1.03);  /* zoom effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Responsive for mobile: table becomes stacked cards */
+@media (max-width: 820px){
+  .evac-table{
+    min-width: 0;
+    display: block;
+  }
+
+  .evac-table thead{
+    display: none;
+  }
+
+  .evac-table tbody{
+    display: grid;
+    gap: 12px;
+  }
+
+  .evac-table tbody tr{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(17,24,39,0.03);
+  }
+
+  .evac-table tbody td{
+    display: block;
+    padding: 6px 8px;
+    border-bottom: none;
+    font-size: 14px;
+  }
+
+  .evac-table tbody td:first-child::before{ content: "Item Chosen: "; font-weight:600; color: #17202a; }
+  .evac-table tbody td:nth-child(2)::before{ content: "Why We Chose It?: "; font-weight:600; color: #17202a; }
+  .evac-table tbody td:nth-child(3)::before{ content: "Professional Value: "; font-weight:600; color: #17202a; }
+  .evac-table tbody td:nth-child(4)::before{ content: "Suggested by Whom?: "; font-weight:600; color: #17202a; }
+}
+
+
+
+
+    @media (max-width:720px){
+      .cards{grid-template-columns:1fr}
+      .container{padding:16px;margin:20px auto}
+      header nav{flex-direction:column;gap:10px;padding:12px}
+    }
+  </style>
+</head>
+<img src="Survival group.jpg" alt="Survival Group" class="group-photo">
+
+  <main class="container" role="main">
+    <h1>DISCUSSION FOR FOOD FESTIVAL </h1>
+
+    <section class="cards" aria-label="Discussion for food festival topics">
+
+      <article class="card">
+        
+        <p>In this session, we concentrated on the planning and preparation stage for the upcoming food festival. The discussion highlighted key skills required for effective event management, such as teamwork, clear communication, problem-solving, and adaptability in changing situations. By the end of the session, we decided to name our group “Flaver Hut.”</p>
+      </article>
+
+      <article class="card">
+        <h2>Key Points</h2>
+        <li>Focused on the planning and preparation phase of the food festival.</li>
+        <li>Identified essential skills for event success: teamwork, communication, problem-solving, and adaptability.</li>
+        <li>Shared ideas on how to handle dynamic and unexpected situations during the event.</li>
+        <li>Emphasized the importance of collaboration and effective coordination among team members.</li>
+        <li>Finalized the group name as “Flaver Hut.”</li>
+      </article>
+  <main class="container" role="main">
+    <h1>SURVIVING SKILLS </h1>
+
+<section class="evac-table-section">
+  <h2>Items to Save During Emergency</h2>
+  <div class="table-wrap">
+    <table class="evac-table" aria-label="Emergency items and their professional value">
+      <thead>
+        <tr>
+          <th>Item Chosen</th>
+          <th>Why We Chose It?</th>
+          <th>Professional Value</th>
+          <th>Suggested by Whom?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Laptop with client database</td>
+          <td>To maintain communication with clients and access essential business records</td>
+          <td>Ensures business continuity and strengthens professional client relationships</td>
+          <td>Sithum</td>
+        </tr>
+        <tr>
+          <td>Company first aid kit</td>
+          <td>To provide immediate medical help during emergencies or evacuations</td>
+          <td>Upholds health and safety standards; shows readiness to handle crises</td>
+          <td>Krishmal</td>
+        </tr>
+        <tr>
+          <td>Important contract documents</td>
+          <td>To safeguard legal and business-critical agreements from potential loss</td>
+          <td>Protects the company from legal risks and secures valuable partnerships</td>
+          <td>Wageesha & Sandani</td>
+        </tr>
+        <tr>
+          <td>Flashlight</td>
+          <td>To safely navigate dark areas during power outages or evacuations</td>
+          <td>Ensures safety, prevents accidents, and supports efficient evacuation</td>
+          <td>Chapa</td>
+        </tr>
+        <tr>
+          <td>Fire extinguisher</td>
+          <td>To control or stop small fires before they spread</td>
+          <td>Prevents injuries and property damage; demonstrates strong emergency preparedness</td>
+          <td>Daham </td>
+        </tr>
+        <tr>
+          <td>Water bottles</td>
+          <td>To prevent dehydration and assist with breathing in smoky environments</td>
+          <td>Supports physical wellbeing and maintains team performance under stress</td>
+          <td>Pasindu</td>
+        </tr>
+        <tr>
+          <td>Office keys</td>
+          <td>To unlock storage areas and access critical supplies or documents</td>
+          <td>Provides access to essential resources and supports smooth evacuation planning</td>
+          <td>Buddhi</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+      <section class="cards" aria-label="Given Scenario">
+
+  <article class="card" style="grid-column: span 2;">
+    <h2>Given Scenario</h2>
+    <iframe src="scenario1.jpg" width="1000px" height="1000px" style="border:none;"></iframe>
+    <iframe src="scenario2.jpg" width="1000px" height="1000px" style="border:none;"></iframe>
+  </article>

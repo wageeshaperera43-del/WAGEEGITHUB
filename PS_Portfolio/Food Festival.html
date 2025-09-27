@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <!-- Link to external CSS file (optional) -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root{
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --muted: #55606a;
+      --accent: #0b64c9;
+      --radius: 12px;
+      --maxw: 900px;
+      --pad: 20px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:#17202a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      font-size:16px;
+      line-height:1.6;
+    }
+
+    /* Navbar */
+    header{
+      background:#333;
+      color:#fff;
+      padding:15px 20px;
+    }
+
+    header nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header nav a{
+      color:#fff;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+      transition:color 0.2s;
+    }
+
+    header nav a:hover{color:rgb(216,240,81);}
+
+    header .logo img{height:90px;width:auto;}
+
+    .container{
+      width:100%;
+      max-width:var(--maxw);
+      padding:calc(var(--pad) * 1.2);
+      box-sizing:border-box;
+      margin:40px auto;
+    }
+    .container h1{
+      font-size: 40px;
+    }
+
+    .cards {
+      display: block; 
+      gap: 0; 
+    }
+
+    .card, .card1 {
+      background: none;   
+      border: none;       
+      box-shadow: none;   
+      padding: 0;         
+      margin: 50px 0;     
+      width: 100%;    
+    }
+
+    .card h2, .card1 h2 {
+      margin: 20px 0 10px 0;
+      font-size: 30px;
+      color: rgb(139, 154, 50);  
+    }
+
+    .card p, .card1 p {
+      margin: 0 0 15px 0;
+      color: #333;     
+      font-size: 20px;
+    }
+    .card li{
+      margin: 0 0 15px 0;
+      color: #333;     
+      font-size: 20px;
+    }
+    .group-photo {
+      display: block;
+      width: 400px;
+      height: auto;
+      border-radius: 12px;  
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+      margin: 20px auto;    
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .group-photo:hover {
+      transform: scale(1.03); 
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* ---------------- PHOTO SLIDER ---------------- */
+    .photo-slider {
+      width: 100%;
+      width: 600px;
+      height: 350px;
+      margin: 40px auto;
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    }
+
+    .slides {
+      width: 300%;
+      height: 100%;
+      display: flex;
+      transition: margin-left 0.6s ease;
+    }
+
+    .slides input {
+      display: none;
+    }
+
+    .slide {
+      width: 100%;
+      flex: 1;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Navigation dots */
+    .navigation-manual {
+      position: absolute;
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      bottom: 15px;
+      gap: 8px;
+    }
+
+    .manual-btn {
+      border: 2px solid #fff;
+      padding: 6px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .manual-btn:hover {
+      background: #fff;
+    }
+
+    /* Radio button states */
+    #img1:checked ~ .first {
+      margin-left: 0;
+    }
+    #img2:checked ~ .first {
+      margin-left: -100%;
+    }
+    #img3:checked ~ .first {
+      margin-left: -200%;
+    }
+
+    @media (max-width:720px){
+      .cards{grid-template-columns:1fr}
+      .container{padding:16px;margin:20px auto}
+      header nav{flex-direction:column;gap:10px;padding:12px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a class="logo" href="index.html" ><img src="2.png" height="90" width="150" alt="My website Logo"></a>
+      </div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="Lecturer.html">Lecturer</a>
+        <a href="Content.html">Our Content</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container" role="main">
+    <h1>FOOD FESTIVAL DAY </h1>
+
+    <section class="cards" aria-label="CV writing topics">
+      <article class="card">
+        <p>For our Professional Skills module assignment, the Year 2 Semester 2 team organized a Food Festival on 29th July at the BOC Ground Floor. The event was carried out through collective teamwork, with several groups managing stalls that offered a variety of foods while applying different strategies to promote and sell their products.</p>
+      </article>
+
+      <article class="card">
+        <h2>What did we sell?</h2>
+        <li>Shrimp Wade</li>
+        <li>Curd & Treacle</li>
+        <li>Sandwiches</li>
+        <li>Pancakes</li>
+        <li>Roti with Lunu miris</li>
+        <p><b>Special</b></p>
+        <li>Rambutan Achcharu</li> 
+      </article>
+
+      <article class="card">
+        <h2>Our poster</h2>
+      </article>
+      <img src="poster.jpg" alt="Survival Group" class="group-photo">
+
+      <article class="card">
+        <h2>OPERATION ON THAT DAY</h2>
+        <p>All team members actively managed the stall from beginning to end, handling sales, managing cash, and engaging with customers. Throughout the food festival, we promoted our items by inviting passersby to visit our stall, which helped attract a steady stream of students and staff. We were also fortunate to have our stall located next to the lifts, which naturally drew the attention of people as they stepped out. In addition, the unique variety of food we offered was well-suited to the lunchtime crowd, further increasing interest and attracting more visitors to our stall.</p>
+      </article>
+
+      <!-- New photo slider -->
+      <div class="photo-slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="img1" checked>
+          
+
+          <div class="slide first">
+            <img src="last1.jpg" alt="Food Festival 1">
+          </div>
+          <div class="slide">
+            <img src="last1.jpg" alt="Food Festival 2">
+          </div>
+          <div class="slide">
+            <img src="roti.jpg" alt="Food Festival 3">
+          </div>
+
+        
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>
